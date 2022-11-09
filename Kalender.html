@@ -6,290 +6,69 @@ JavaScript = Inteligens
 ""
 -->
 
-
-<!DOCTYPE html><!--Här väljer vi om vi har HTML, eller XHTML. XHTML är mer strikt-->
+<!DOCTYPE html>
+<!--Här väljer vi om vi har HTML, eller XHTML. XHTML är mer strikt-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="JavaScript" href="JavaScript.js">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body class="BodyClass">
+  <body class="BodyClass">
+    <h1 class="HClass"><a href="index.html"> Linköpings Tennisklubb</a></h1>
 
-<h1 class="HClass"><a href ="index.html"> Linköpings Tennisklubb</a></h1>
-    
-    
-    <table class="TableClass">
-        <!-- Rad med rubriker-->
-    <tr>
-        
+    <table class="TableClass" cellspacing="0" rowspacing="0">
+      <!-- Rad med rubriker-->
+      <tr>
         <th class="ThClass"><a href="Banor.html">Banor</a></th>
         <th class="ThClass"><a href="Changeroom.html">Omklädningsrum</a></th>
-        <th class = "ThClass"><a href="Bastu.html">Bastu</a></th>
-        <th class = "ThClass"><a href="Kalender.html">Kalender</a></th>
-    </tr>   
-    <!--Här har vi siclass =ffor-->
+        <th class="ThClass"><a href="Bastu.html">Bastu</a></th>
+        <th class="ThClass"><a href="Kalender.html">Kalender</a></th>
+      </tr>
+      <!--Här har vi siclass =ffor-->
     </table>
 
     <center>
-    <h2 class="KalenderH">Vänligen fyll i uppgifter nedan för att boka en tennisplan</h2>
+      <h2 class="KalenderH1">Vänligen fyll i uppgifter nedan för att boka en tennisplan</h2>
     </center>
-    <form onsubmit="return kontroll()" method="post">
-
+    <form name="Felhantering" onsubmit="return kontroll()" method="post">
+      <!--Method post, skickar vi inmatning till JS-->
       <table class="BokningsTable">
-     <ol class="BokningsList">
-        <label for="fname" id="Name"> Första namn:</label>
-        <input type="text">
-        <br>
-        <label for="lname" id="SecondName"> Andra namn:</label>
-        <input type="text">
-        <br>
-        <label for="Number"> Mobilnummer</label>
-        <input type="text">
-        <br>
+        <ol class="BokningsList">
+          <label for="Namn"> Första namn:</label>
+          <input type="text" id="Namn" />
+          <br />
+          <label for="lname" id="SecondName"> Andra namn:</label>
+          <input type="text" />
+          <br />
+          <label for="Number"> Mobilnummer</label>
+          <input type="text" />
+          <br />
 
-       <label for="bookingtime">Booking (date and time): </label>
-        <input type="datetime-local" id="bookingtime" name="bookingtime">
-       
-        <br>
-        <center>
-        <h2 class="KalenderH">Jag vill boka Tennisplanen i:</h2>
-        </center>
-        <input type="radio" id="ett" name="Tid" value="1 Timme">
-        <label for="ett">1 Timme</label>
-        <br>
-        <input type="radio" id="två" name="Tid" value="2 Timmar">
-        <label for="ett">2 Timmar</label>
-        <br>
-        <input type="radio" id="tre" name="Tid" value="3 Timmar">
-        <label for="ett">3 Timmar</label>
-        <br>
-        <input type="submit" value="Bekräfta">
-    </ol>
-    </table>
+          <label for="bookingtime">Booking (date and time): </label>
+          <input type="datetime-local" id="bookingtime" name="bookingtime" />
 
+          <br />
+          <center>
+            <h2 class="KalenderH2">Jag vill boka Tennisplanen i:</h2>
+          </center>
+          <input type="radio" id="ett" name="Tid" value="1 Timme" />
+          <label for="ett">1 Timme</label>
+          <br />
+          <input type="radio" id="två" name="Tid" value="2 Timmar" />
+          <label for="ett">2 Timmar</label>
+          <br />
+          <input type="radio" id="tre" name="Tid" value="3 Timmar" />
+          <label for="ett">3 Timmar</label>
+          <br />
+          <input type="submit" value="Bekräfta" />
+        </ol>
+      </table>
     </form>
+  </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="KalenderDIV">
-
-    <table class="BokningsKalender">
-
-        <tr>
-            <td class="TRKalender"></td>
-            
-             <td class="TRKalender">Måndag</td>
-             <td class="TRKalender">Tisdag</td>
-             <td class="TRKalender">Onsdag</td>
-             <td class="TRKalender">Torsdag</td>
-             <td class="TRKalender">Fredag</td>
-             <td class="TRKalender">Lördag</td>
-             <td class="TRKalender">Söndag</td>
-         </tr>
-         <tr>
-            
-             <td class="TRKalender">06</td>
-             <td class="TRKalender"id="Bokning"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-         </tr>
-         <tr>
-          
-             <td class="TRKalender">07</td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-             <td class="TRKalender"></td>
-         </tr>
-         <tr>
-          
-            <td class="TRKalender">08</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">09</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">10</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">11</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">12</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">13</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">14</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">15</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">14</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">16</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">17</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">18</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-        <tr>
-          
-            <td class="TRKalender">19</td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-            <td class="TRKalender"></td>
-        </tr>
-
-
-    </table>
-
-    </div>
-
-
-
-
-    </ul>
-
-
-
-
-    </ul>
-
-
-
-</body>
+  <script src="JavaScript.js" type="text/javascript"></script>
 </html>

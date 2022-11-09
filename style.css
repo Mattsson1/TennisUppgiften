@@ -1,135 +1,145 @@
-
-
-        .HClass{
-        padding-top: 10px;
-        padding-bottom: 20px;
-        font-size: 50px;
-        background-color:green;
-        margin: 0%;
-        height: 100%;
-        opacity: 0.8;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-       
-        
-         }
-    .BodyClass{
-       background-image: url("https://images7.alphacoders.com/734/734192.jpg");
-     background-size: 100%;
-    }
-.TableClass{
-
-    margin-top: 0%;
-    width:100%;
-    border-width: 10px;
-    border-style:hidden;
-}
-.ThClass{
-    font-size:50px;
-    margin-top: -5%;
-    opacity: 0.8;
-    background-color:green;
-
-}
-a{
-    background-color:green;
-    border:none;
-    color: white;
-    font-size: 40px;
-    transition-duration: 0.4s;
-    padding: 0px 95px;
-    text-decoration: none;
-    margin: 10px 10px;
-    cursor: pointer;
-  
-}
-a:hover
-{
-    box-shadow: 0 8px 30px 0
-    rgba(0,0,0,0.2), 0 20px 100px 0
-    rgba(0,0,0,0.19);
-
-}
-.BasicKnapp
-{
-    background-color:green;
-    border:none;
-    color: white;
-    font-size: 30px;
-    transition-duration: 0.4s;
-    padding: 15px 32px;
-    text-decoration: none;
-    margin: 10px 10px;
-    cursor: pointer;
-
+body,
+html {
+  padding: 0;
+  margin: 0;
 }
 
+.HClass {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  background-color: green;
+  margin: 0%;
+  height: 100%;
+  opacity: 0.8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+Body {
+  background-image: url("https://images7.alphacoders.com/734/734192.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 10px;
+}
+.TableClass {
+  margin-top: 0%;
+  width: 100%;
+  border: none;
+}
+.ThClass {
+  width: 25%;
+  font-size: 1rem;
+  opacity: 0.8;
+  background-color: green;
+}
+a {
+  background-color: green;
+  border: none;
+  color: white;
 
-.BasicKnapp2:hover
-{
-    box-shadow: 0 8px 30px 0
-    rgba(0,0,0,0.2), 0 20px 100px 0
-    rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+a:hover {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2), 0 20px 100px 0 rgba(0, 0, 0, 0.19);
+}
+.BasicKnapp {
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 30px;
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-decoration: none;
+  margin: 10px 10px;
+  cursor: pointer;
 }
 
-
-.KalenderH
-{
-    width:10cm ;
-    color: white;
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: green;
-    
-    
+.BasicKnapp2:hover {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2), 0 20px 100px 0 rgba(0, 0, 0, 0.19);
 }
 
-label
-{
-   color: white;
-   background-color: green;
-    font-size: 25px;
+.KalenderH1 {
+  width: 30%;
+  color: white;
+  font-size: 130%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: green;
 }
 
-input
-{
-    color: black;
-   font-size: 20px;
-   
+.KalenderH2 {
+  width: 30%;
+  color: white;
+  font-size: 40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: green;
 }
 
-
-
-.BokningsList
-{
-    text-align: center;
-    background-color:black;
-    opacity: 0.8;
-    font-size: 50px;
+label {
+  color: white;
+  background-color: green;
+  font-size: 25px;
 }
-#ett,#två,#tre
-{
-   width: 20px;
-   height: 20px;
+
+input {
+  color: black;
+  font-size: 20px;
+}
+
+.BokningsList {
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  font-size: 50px;
+}
+#ett,
+#två,
+#tre {
+  width: 20px;
+  height: 20px;
 }
 
 /*
 Kalender
 */
 
-
-.BokningsKalender
-{
-background-color: aliceblue;
-
+.BokningsKalender {
+  background-color: aliceblue;
 }
-.TRKalender
-{
-    background-color: white;
-    font-size: 20px;
-  
+.TRKalender {
+  background-color: white;
+  font-size: 20px;
 }
-p
-{
-    color: aliceblue;
+p {
+  color: aliceblue;
+}
+
+@media (min-width: 480px) {
+  .ThClass,
+  .HClass {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  /* For desktop: */
+  .ThClass {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  /* For desktop: */
+  .ThClass {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  /* For desktop: */
+  .ThClass,
+  .HClass {
+    font-size: 2rem;
+  }
 }
