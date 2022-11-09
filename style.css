@@ -1,0 +1,135 @@
+
+
+        .HClass{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 50px;
+        background-color:green;
+        margin: 0%;
+        height: 100%;
+        opacity: 0.8;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+       
+        
+         }
+    .BodyClass{
+       background-image: url("https://images7.alphacoders.com/734/734192.jpg");
+     background-size: 100%;
+    }
+.TableClass{
+
+    margin-top: 0%;
+    width:100%;
+    border-width: 10px;
+    border-style:hidden;
+}
+.ThClass{
+    font-size:50px;
+    margin-top: -5%;
+    opacity: 0.8;
+    background-color:green;
+
+}
+a{
+    background-color:green;
+    border:none;
+    color: white;
+    font-size: 40px;
+    transition-duration: 0.4s;
+    padding: 0px 95px;
+    text-decoration: none;
+    margin: 10px 10px;
+    cursor: pointer;
+  
+}
+a:hover
+{
+    box-shadow: 0 8px 30px 0
+    rgba(0,0,0,0.2), 0 20px 100px 0
+    rgba(0,0,0,0.19);
+
+}
+.BasicKnapp
+{
+    background-color:green;
+    border:none;
+    color: white;
+    font-size: 30px;
+    transition-duration: 0.4s;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 10px 10px;
+    cursor: pointer;
+
+}
+
+
+.BasicKnapp2:hover
+{
+    box-shadow: 0 8px 30px 0
+    rgba(0,0,0,0.2), 0 20px 100px 0
+    rgba(0,0,0,0.19);
+}
+
+
+.KalenderH
+{
+    width:10cm ;
+    color: white;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: green;
+    
+    
+}
+
+label
+{
+   color: white;
+   background-color: green;
+    font-size: 25px;
+}
+
+input
+{
+    color: black;
+   font-size: 20px;
+   
+}
+
+
+
+.BokningsList
+{
+    text-align: center;
+    background-color:black;
+    opacity: 0.8;
+    font-size: 50px;
+}
+#ett,#två,#tre
+{
+   width: 20px;
+   height: 20px;
+}
+
+/*
+Kalender
+*/
+
+
+.BokningsKalender
+{
+background-color: aliceblue;
+
+}
+.TRKalender
+{
+    background-color: white;
+    font-size: 20px;
+  
+}
+p
+{
+    color: aliceblue;
+}
