@@ -132,7 +132,8 @@ p {
 }
 @media (min-width: 768px) {
   /* For desktop: */
-  .ThClass {
+  .ThClass,
+  {
     font-size: 3rem;
   }
 }
