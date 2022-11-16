@@ -15,8 +15,8 @@ JavaScript = Inteligens
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="MediaQueries.css">
-    <link rel="stylesheet" href="KalenderStyle.css">
+    <link rel="stylesheet" href="MediaQueries.css" />
+    <link rel="stylesheet" href="KalenderStyle.css" />
   </head>
 
   <body>
@@ -36,34 +36,32 @@ JavaScript = Inteligens
     <center>
       <h2 class="KalenderH1">Vänligen fyll i uppgifter nedan för att boka en tennisplan</h2>
     </center>
-    <form name="Felhantering" onsubmit="return kontroll()" method="post">
+    <form name="Felhantering" onsubmit="return kontroll() ">
       <!--Method post, skickar vi inmatning till JS-->
       <table class="BokningsTable">
         <ol class="BokningsList">
           <label for="Namn"> Första namn:</label>
-          <input type="text" id="Namn" />
+          <input type="text" id="ForstaNamn" />
           <br />
-          <label for="lname" id="SecondName"> Andra namn:</label>
-          <input type="text" />
+          <label for="Andranamn"> Andra namn:</label>
+          <input type="text" id="SecondName" />
           <br />
           <label for="Number"> Mobilnummer</label>
-          <input type="text" />
+          <input type="text" id="Nummer" />
           <br />
-
           <label for="bookingtime">Booking (date and time): </label>
-          <input type="datetime-local" id="bookingtime" name="bookingtime" />
-
+          <input type="datetime-local" id="bookingtime" />
           <br />
           <center>
             <h2 class="KalenderH2">Jag vill boka Tennisplanen i:</h2>
           </center>
-          <input type="radio" id="ett" name="Tid" value="1 Timme" />
+          <input type="radio" class="RadioKnapp" name="Tid" value="1 timme" checked="true" />
           <label for="ett">1 Timme</label>
           <br />
-          <input type="radio" id="två" name="Tid" value="2 Timmar" />
+          <input type="radio" class="RadioKnapp" name="Tid" value="2 timme" />
           <label for="ett">2 Timmar</label>
           <br />
-          <input type="radio" id="tre" name="Tid" value="3 Timmar" />
+          <input type="radio" class="RadioKnapp" name="Tid" value="3 timme" />
           <label for="ett">3 Timmar</label>
           <br />
           <input type="submit" value="Bekräfta" />
