@@ -1,11 +1,11 @@
 function kontroll() {
-  var Name = document.forms["Felhantering"]["ForstaNamn"].value;
+  var Name = document.forms["Felhantering"]["ForstaNamn"].value;//Hämtar värdet av "Forstanamn" inuti "FelHantering" som är min <form>
   var Andranamn = document.forms["Felhantering"]["SecondName"].value;
   var Mobilnummer = document.forms["Felhantering"]["Nummer"].value;
   var Time = document.forms["Felhantering"]["bookingtime"].value;
-  var buttons = document.getElementsByClassName("RadioKnapp");
+  var buttons = document.getElementsByClassName("RadioKnapp");//Hämtar RadioKnapp classerna
 
-  for (i = 0; i < buttons.length; i++) {
+  for (i = 0; i < buttons.length; i++) {//En forloop. i=0, buttons.length som är 3 i detta fall. Loopen kommer köras 3 gånger
     if (buttons[i].checked) {
       var Radio = buttons[i].value;
     }
