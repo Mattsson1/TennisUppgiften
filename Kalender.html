@@ -36,7 +36,7 @@ JavaScript = Inteligens
     <center>
       <h2 class="KalenderH1">Vänligen fyll i uppgifter nedan för att boka en tennisplan</h2>
     </center>
-    <form name="Felhantering" onsubmit="return kontroll() ">
+    <form id="myForm" name="LogInForm">
       <!--Method post, skickar vi inmatning till JS-->
       <table class="BokningsTable">
         <ol class="BokningsList">
@@ -50,10 +50,7 @@ JavaScript = Inteligens
           <input type="text" id="Nummer" />
           <br />
           <label for="bookingtime">Booking (date and time): </label>
-          <input type="datetime-local" id="bookingtime" required 
-          
-        
-          />
+          <input type="datetime-local" id="bookingtime" required />
           <br />
           <center>
             <h2 class="KalenderH2">Jag vill boka Tennisplanen i:</h2>
@@ -68,6 +65,10 @@ JavaScript = Inteligens
           <label for="ett">3 Timmar</label>
           <br />
           <input type="submit" value="Bekräfta" />
+
+          <div id="eventContainer">
+            <div id="Events"></div>
+          </div>
         </ol>
       </table>
     </form>
