@@ -1,40 +1,45 @@
-function kontroll() {
-  var Name = document.forms["Felhantering"]["ForstaNamn"].value;//Hämtar värdet av "Forstanamn" inuti "FelHantering" som är min <form>
-  var Andranamn = document.forms["Felhantering"]["SecondName"].value;
-  var Mobilnummer = document.forms["Felhantering"]["Nummer"].value;
-  var Time = document.forms["Felhantering"]["bookingtime"].value;
-  var buttons = document.getElementsByClassName("RadioKnapp");//Hämtar RadioKnapp classerna
+const Events = document.getElementById("myForm").addEventListener("submit", (event) => kontroll(event))
 
-  for (i = 0; i < buttons.length; i++) {//En forloop. i=0, buttons.length som är 3 i detta fall. Loopen kommer köras 3 gånger
+function kontroll(event) {
+  event.preventDefault()
+  var Name = document.forms["LogInForm"]["ForstaNamn"].value //Hämtar värdet av "Forstanamn" inuti "LogInForm" som är min <form>
+  var Andranamn = document.forms["LogInForm"]["SecondName"].value
+  var Mobilnummer = document.forms["LogInForm"]["Nummer"].value
+  var Time = document.forms["LogInForm"]["bookingtime"].value
+  var buttons = document.getElementsByClassName("RadioKnapp") //Hämtar RadioKnapp classerna
+  for (i = 0; i < buttons.length; i++) {
+    //En forloop. i=0, buttons.length som är 3 i detta fall. Loopen kommer köras 3 gånger
     if (buttons[i].checked) {
-      var Radio = buttons[i].value;
+      var Radio = buttons[i].value
     }
   }
   if (Name == "" || Andranamn == "" || Mobilnummer == "" || Time == " ") {
-    alert("Du måste fylla i alla fält!");
-    return false;
+    alert("Du måste fylla i alla fält!")
+    return false
   } else {
-    alert(Name + " " + Andranamn + " " + Mobilnummer + " Har bokat " + Time + " " + Radio + " bokad tid");
+    alert(Name + " " + Andranamn + " " + Mobilnummer + " Har bokat " + Time + " " + Radio + " bokad tid")
+  }
+
+  createEvent()
+}
+
+function Efternamnkontroll() {
+  var Andranamn = document.forms["LogInForm"]["Andranamn"].value
+  if (Andranamn == "") {
+    alert("Du måste skriva in ett efternamn")
+    return false
   }
 }
 
-//let NewEvent = document.createElement('div');
-//  NewEvent.classList.add('Events')
-  
+function createEvent() {
+  const loopForm = document.getElementById("myForm")
 
-
-function Efternamnkontroll() {
-
-  var newEvent = document.createElement("div")
-  newEvent.addEventListener('click', function handleClick(event) {
-    console.log("element clicked!", event)
-
+  Array.from(loopForm.elements).forEach((element) => {
+    console.log(element.value)
   })
 
-
-  newEvent.classList.add("Events");
-  document.getElementById("Events").appendChild(newEvent);
-  
-
+  const eventDiv = document.createElement("p")
+  eventDiv.classList.add("Test")
+  eventDiv.textContent = Name
+  document.getElementById("Events").appendChild(eventDiv)
 }
-

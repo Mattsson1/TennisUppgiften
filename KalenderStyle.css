@@ -1,52 +1,55 @@
 .KalenderH1 {
-    width: 30%;
-    color: white;
-    font-size: 160%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: green;
-  }
-  
-  .KalenderH2 {
-    width: 30%;
-    color: white;
-    font-size: 40%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: green;
-  }
-  
-  label {
-    color: white;
-    background-color: green;
-    font-size: 25px;
-  }
-  
-  input {
-    color: black;
-    font-size: 20px;
-  }
-  
-  .BokningsList {
-    text-align: center;
-    background-color: black;
-    opacity: 0.8;
-    font-size: 50px;
-  }
-  #ett,
-  #två,
-  #tre {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .BokningsKalender {
-    background-color: aliceblue;
-  }
-  .TRKalender {
-    background-color: white;
-    font-size: 20px;
-  }
-  p {
-    color: aliceblue;
-  }
-  
-  
+  width: 30%;
+  color: white;
+  font-size: 160%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: green;
+}
+
+.KalenderH2 {
+  width: 30%;
+  color: white;
+  font-size: 40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: green;
+}
+
+label {
+  color: white;
+  background-color: green;
+  font-size: 25px;
+}
+
+input {
+  color: black;
+  font-size: 20px;
+}
+
+.BokningsList {
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  font-size: 50px;
+}
+#ett,
+#två,
+#tre {
+  width: 20px;
+  height: 20px;
+}
+
+.BokningsKalender {
+  background-color: aliceblue;
+}
+.TRKalender {
+  background-color: white;
+  font-size: 20px;
+}
+p {
+  color: aliceblue;
+}
+#eventDiv {
+}
+.Test {
+  background-color: aqua;
+}

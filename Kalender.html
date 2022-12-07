@@ -14,11 +14,9 @@ JavaScript = Inteligens
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="MediaQueries.css" />
     <link rel="stylesheet" href="KalenderStyle.css" />
-    
   </head>
 
   <body>
@@ -38,7 +36,7 @@ JavaScript = Inteligens
     <center>
       <h2 class="KalenderH1">Vänligen fyll i uppgifter nedan för att boka en tennisplan</h2>
     </center>
-    <form name="Felhantering">
+    <form id="myForm" name="LogInForm">
       <!--Method post, skickar vi inmatning till JS-->
       <table class="BokningsTable">
         <ol class="BokningsList">
@@ -52,7 +50,7 @@ JavaScript = Inteligens
           <input type="text" id="Nummer" />
           <br />
           <label for="bookingtime">Booking (date and time): </label>
-          <input type="datetime-local" id="bookingtime" />
+          <input type="datetime-local" id="bookingtime" required />
           <br />
           <center>
             <h2 class="KalenderH2">Jag vill boka Tennisplanen i:</h2>
@@ -60,19 +58,20 @@ JavaScript = Inteligens
           <input type="radio" class="RadioKnapp" name="Tid" value="1 timme" checked="true" />
           <label for="ett">1 Timme</label>
           <br />
-          <input type="radio" class="RadioKnapp" name="Tid" value="2 timme" />
+          <input type="radio" class="RadioKnapp" name="Tid" value="2 timmar" />
           <label for="ett">2 Timmar</label>
           <br />
-          <input type="radio" class="RadioKnapp" name="Tid" value="3 timme" />
+          <input type="radio" class="RadioKnapp" name="Tid" value="3 timmar" />
           <label for="ett">3 Timmar</label>
           <br />
-          <button onclick="kontroll(),Efternamnkontroll() ,createEvent()">Bekräfta</button>
+          <input type="submit" value="Bekräfta" />
+
+          <div id="eventContainer">
+            <div id="Events"></div>
+          </div>
         </ol>
       </table>
     </form>
-
-    <div id="Events"></div>
-
   </body>
 
   <script src="JavaScript.js" type="text/javascript"></script>
