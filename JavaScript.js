@@ -18,10 +18,23 @@ function kontroll() {
   }
 }
 
+//let NewEvent = document.createElement('div');
+//  NewEvent.classList.add('Events')
+  
+
+
 function Efternamnkontroll() {
-  var Andranamn = document.forms["Felhantering"]["Andranamn"].value;
-  if (Andranamn == "") {
-    alert("Du måste skriva in ett efternamn");
-    return false;
-  }
+
+  var newEvent = document.createElement("div")
+  newEvent.addEventListener('click', function handleClick(event) {
+    console.log("element clicked!", event)
+
+  })
+
+
+  newEvent.classList.add("Events");
+  document.getElementById("Events").appendChild(newEvent);
+  
+
 }
+
