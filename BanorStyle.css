@@ -1,7 +1,7 @@
 .BodyClass
 {
 
-  background-color:darkslategray;
+  background-color:white;
   background-image: none;
   background-attachment: scroll;
   
@@ -51,17 +51,23 @@ background-repeat: no-repeat;
   color: green;
   font-size: 1rem;
   margin-top: 80%;
-  margin-right: 60%;
+  margin-right: 10%;
+  margin-left: 10%;
   height: 20px;
   display:inline-block;
   position: relative;
 }
 
 
-
-
-
-
+@media (min-width: 0px) {/*Om skärmen är större än 480px körs ändras klasserna som jag valt till "1rem" */
+  .BanorHeader,
+  .RandomText,
+  .BodyClass,
+  .BanorHeader
+    {
+  font-size: 1.5rem;
+  }
+}
 
 @media (min-width: 480px) {/*Om skärmen är större än 480px körs ändras klasserna som jag valt till "1rem" */
   .BanorHeader,
